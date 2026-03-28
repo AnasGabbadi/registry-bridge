@@ -5,33 +5,7 @@ export default {
         const menuService = universe.getService('menu');
 
         // Register menu item in header
-        menuService.registerHeaderMenuItem('Extensions', 'console.extensions', {
-            icon: 'shapes',
-            priority: 99,
-            id: 'registry-bridge',
-            slug: 'registry-bridge',
-            description: 'Discover, install, and publish extensions to the Fleetbase extension registry.',
-            shortcuts: [
-                {
-                    title: 'Explore',
-                    description: 'Browse and discover extensions available in the registry.',
-                    icon: 'compass',
-                    route: 'console.extensions.explore',
-                },
-                {
-                    title: 'Installed',
-                    description: 'View and manage extensions currently installed in your console.',
-                    icon: 'puzzle-piece',
-                    route: 'console.extensions.installed',
-                },
-                {
-                    title: 'Purchased',
-                    description: 'Access extensions you have purchased from the registry.',
-                    icon: 'receipt',
-                    route: 'console.extensions.purchased',
-                },
-            ],
-        });
+        menuService.registerHeaderMenuItem('Extensions', 'console.extensions', { icon: 'shapes', priority: 99, id: 'registry-bridge', slug: 'registry-bridge' });
 
         // Register admin controls
         menuService.registerAdminMenuPanel(
