@@ -5,7 +5,7 @@ export default {
         const menuService = universe.getService('menu');
 
         // Register menu item in header
-        menuService.registerHeaderMenuItem('Extensions', 'console.extensions', { icon: 'shapes', priority: 99, id: 'registry-bridge', slug: 'registry-bridge' });
+        //menuService.registerHeaderMenuItem('Extensions', 'console.extensions', { icon: 'shapes', priority: 99, id: 'registry-bridge', slug: 'registry-bridge' });
 
         // Register admin controls
         menuService.registerAdminMenuPanel(
